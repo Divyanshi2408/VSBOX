@@ -13,9 +13,9 @@
                           DATABASES = {
                               'default': {
                                   'ENGINE': 'django.db.backends.postgresql',
-                                  'NAME': 'postgres1',
-                                  'USER':'postgremaster',
-                                  'PASSWORD':'P@ssW0rD',
+                                  'NAME': 'XXXXXXX',
+                                  'USER':'XXXXXX',
+                                  'PASSWORD':'XXXXXX',
                                   'HOST':'database-buddydome.cbw5rxvx0i1x.ap-south-1.rds.amazonaws.com',
                                   'POST':'5432'
                               }
