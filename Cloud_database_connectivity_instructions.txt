@@ -1,0 +1,35 @@
+#Updating django default database to AWS managed Database
+
+-For this We Use AWS RDS (with Preffered PostgreSql)
+
+
+    -Login to AWS console and head toward for RDS Service
+    -Launch an Postgresql Database instance and note down the username,master username and password of the instance ( it will be shown one time only so make sure to note them down very carefully)
+    -Wait for the database instance to be in running state ( Takes approximately 10 min)
+    -After Launched, click on the instance and it will show the details of your database
+    -Following is the Code snippet:-
+
+
+                          DATABASES = {
+                              'default': {
+                                  'ENGINE': 'django.db.backends.postgresql',
+                                  'NAME': 'postgres1',
+                                  'USER':'postgremaster',
+                                  'PASSWORD':'P@ssW0rD',
+                                  'HOST':'database-buddydome.cbw5rxvx0i1x.ap-south-1.rds.amazonaws.com',
+                                  'POST':'5432'
+                              }
+                          }
+
+
+          >>> Change name to the username to saved earlier
+          >>> Change Username to master username
+          >>> Change Password to new Password
+          >>> Change Host to new host which is shown exactly on aws console database instance page
+    -SAVE CHANGES
+
+
+With This Your Database is successfully connected via network And can be used with multiple applications as a shared data model.
+
+
+- If you want to interact with your database with your system you can Use "PGadmin" which is basically for postgreSQL database.
