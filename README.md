@@ -1,6 +1,6 @@
 #Student Management System
 
-This is a student management system built using * Django 4.0 * , * Amazon web services * and * Bootstarp5 *.
+This is a student management system built using * Django 4.0 * and * Bootstarp5 *.
 
 ## Prerequisites(Install):
 
